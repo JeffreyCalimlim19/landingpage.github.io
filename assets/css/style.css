@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+.container {
+    overflow: hidden;
+}
 .main {
     background-image: url("../images/background.jpg");
     background-size: cover;
@@ -59,20 +62,8 @@
     padding-top: 6%;
     padding-bottom: 5%;
 }
-.question-1{  
-    display: flex;
-    align-items: center;
-    width: 860px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.question-2{  
-    display: flex;
-    align-items: center;
-    width: 860px;
-    margin-left: auto;
-    margin-right: auto  
-}
+.question-1,
+.question-2,
 .question-3{  
     display: flex;
     align-items: center;
@@ -143,7 +134,6 @@
     padding-bottom: 50px;
 }
 .solution > h1 {
-    color: red;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -212,16 +202,7 @@
     width: 100%;
     font-family:'Lato', sans-serif;
 }
-/* .introducing:before {
-    content: '';
-	position: absolute;
-	left: 0;
-  right: 0;
-  top: 300px;
-  bottom: 0;
-  background: linear-gradient(to bottom,  rgba(255,255,255,0), white 100%);
-  opacity: .5;
-} */
+
 .introducing:before {
     position: absolute;
     content: '';
@@ -248,8 +229,10 @@
     font-style: normal;
     font-weight: 700px;
     line-height: 140%;
+    font-size: 30px;
     letter-spacing: 0.05em;
     padding-bottom: 20px;
+    padding-top: 30px;
 }
 .introducing > .brain-flow {
     background-image: url("../images/question.png");
@@ -337,16 +320,16 @@
 .boosts-line > img{
     position: absolute;
     left: 40%;
-    top: 24%;
+    top: 25%;
     z-index: 1;
-    margin-top: 37px;
+    margin-top: 38px;
 }
 .presence-line > img {
     position: absolute;
     left: 48%;
-    top: 24%;
+    top: 25%;
     z-index: 1;
-    margin-top: 39px;
+    margin-top: 40px;
 }
 .gentle-line > img {
     position: absolute;
@@ -367,14 +350,14 @@
     left: 41%;
     top: 41%;
     z-index: 1;
-    margin-top: 2px;
+    margin-top: 18px;
 }
 .flow-line > img {
     position: absolute;
     left: 51%;
-    top: 43%;
+    top: 44%;
     z-index: 1;
-    margin-top: 12px;
+    margin-top: 8px;
 }
 .row-3 {
     display: flex;
@@ -458,7 +441,214 @@
     background-color: #000;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 }
-@media only screen and (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 480px){
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .main {
+        background-image: url("../images/mobilebackground.png");
+        position: relative;
+        margin: 0;
+        padding: 0;
+        background-position: center;
+        width: auto;
+        height: auto;
+    }
+    .main > h1 { 
+        font-size: 34px;
+        width: auto;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .main > p { 
+        text-align: center;
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+    .main > .hello {
+        text-align: center;
+        font-size: 60px;
+        line-height: 98px;
+        padding-top: 220px;
+    }
+    .focus {
+        border-bottom: 1px solid #000;
+        background-color: #000;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    }
+    .focus > .calm {
+        font-size: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        width: auto;
+        text-align: center;
+        line-height: 27px;
+    }
+    .question {
+        background: #000;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .question > 
+    .question-1,
+    .question-2,
+    .question-3 {
+        width: auto;
+    }
+    .question > 
+    .question-1,
+    .question-2,
+    .question-3 {
+        font-size: 16px;
+    }
+    .question-1 > img {
+        padding-bottom: 60px;
+    }
+    .question-2 > img {
+        padding-bottom: 60px;
+    }
+    .question-3 > img {
+        padding-bottom: 60px;
+    }
+    .jitters-container {
+        width: auto;
+    }
+    .jitters > P {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .answer > p {
+        width: auto;
+    }
+    .solution {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .solution > h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+    .card-1 {
+        display: inline-block;
+        justify-content: center;
+    }
+    .card-1 > .card{
+        width: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 0;
+    }
+    .nutrient {
+        font-size: 16px;
+        width: auto;
+    }
+    .introducing > h1 {
+        font-size: 22px;
+    }
+    .introducing > .brain-flow > img  {
+        max-width: auto;
+        height: 54px;
+    }
+    .introducing > .brain-flow > p {
+        font-size: 22px;
+        line-height: 29px;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 26px;
+    }
+    .capsule > img {
+        display: none;
+    }
+    .resImage {
+        background-image: url("../images/resBrain.png");
+        max-width: auto;
+        height: 136px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 30px;
+    }
+    .boosts-line,
+    .presence-line,
+    .gentle-line,
+    .captivating-line,
+    .flow-line,
+    .neuroprotective-line {
+        display: none;
+    }
+    .row-1,
+    .row-2,
+    .row-3
+    {
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .boosts,
+    .presence,
+    .gentle,
+    .captivating,
+    .neuroprotective,
+    .flow {
+        width: auto;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 40px;
+    }
+    .energy {
+        width: auto;
+    }
+    .energy > p{
+        font-size: 16px;
+        width: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .formulas {
+        width: auto;
+    }
+    .formulas > p {
+        font-size: 25px !important;
+    }
+    .gradiant { 
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .learn {
+        width: auto;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .learn > h1 {
+        display: none;
+    }
+    .resH1, 
+    .resH2 {
+        text-align: center;
+        padding: 0;
+        font-size: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-family: 'Lato', sans-serif;
+    }
+    .resH1:before {
+        content: 'Click Here To Get Brain Flow';
+        font-style: normal;
+        font-weight: 700;
+        /* line-height: 140%; */
+        letter-spacing: 0.05em;
+        text-shadow: 1px 1px 0px #FFFFFF;
+    }
+    .resH2:before {
+        content: 'And Learn More';
+        font-style: normal;
+        font-weight: 700;
+        /* line-height: 140%; */
+        letter-spacing: 0.05em;
+        text-shadow: 1px 1px 0px #FFFFFF;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
     body {
         margin: 0;
         padding: 0;
@@ -496,14 +686,14 @@
         border-bottom: 1px solid #000;
         background-color: #000;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+        padding-left: 54px;
+        padding-right: 54px;
     }
     .focus > .calm {
         filter: blur(0);
         text-align: center;
         font-size: 30px;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-        padding-left: 50px;
-        padding-right: 50px;
         line-height: 37px;
         width: auto;
         
@@ -511,40 +701,22 @@
     .question {
         background: #000;
         padding-right: 54px;
-        padding-left: 54px;
-        
+        padding-left: 54px;    
     }
-    .question > .question-1 > p{
+    .question > 
+    .question-1,
+    .question-2,
+    .question-3 {
+        width: auto;
+    }
+    .question > 
+    .question-1,
+    .question-2,
+    .question-3{
         font-size: 18px;
-        width: 274px;
-        padding-top: 50px;
-    }
-    .question-1 > img {
-        margin-top: 0;
-    }
-    .question > .question-2 > p{
-        font-size: 18px;
-        width: 274px;
-    }
-    .question > .question-3 > p{
-        font-size: 18px;
-        width: 274px;
-    }
-    .question > .question-3 > p{
-        font-size: 18px;
-        width: 274px;
-    }
-    .question > .question-1 > img{
-        padding-bottom: 1px;
-    }
-    .question > .question-2 > img{
-        padding-bottom: 50px;
-    }
-    .question > .question-3 > img{
-        padding-bottom: 20px;
     }
     .jitters-container {
-        width: 100%;
+        width: auto;
     }
     .jitters p{
         margin-right: auto;
@@ -552,7 +724,6 @@
     }
     .answer > p{
         width: auto;
-        margin: 0;
     }
     .solution {
         padding-left: 54px;
@@ -571,21 +742,18 @@
     }
     .card-1 > .card {
         display: flex;
-        justify-content: center;
         align-items: center;
-        height: 80px;
-        width: auto;
         margin-right: auto;
         margin-left: auto;
+        height: 80px;
+        width: auto;
     }
     .card > p {
         font-size: 16px;
         width: auto;
     }
     .card > img {
-        padding-left: 30px;
-        padding-right: 0;
-        padding-top: 0;
+        padding-left: 0;
     }
     .nutrient {
         font-size: 18px;
@@ -595,7 +763,7 @@
         font-size: 24px;
     }
     .introducing > .brain-flow > img {
-        max-width: 100%;
+        max-width: auto;
         height: 64px !important;
     }
     .introducing > .brain-flow > p {
@@ -610,7 +778,6 @@
         max-width: 100%;
         height: 146px;
         background-repeat: no-repeat;
-        position: fixed;
         background-position: center;
         margin-top: 30px;
     }
@@ -627,6 +794,8 @@
     .row-3
     {
         display: block;
+        padding-left: 54px;
+        padding-right: 54px;
     }
     .boosts,
     .presence,
@@ -634,31 +803,32 @@
     .captivating,
     .neuroprotective,
     .flow {
-        width: 360px;
+        width: auto;
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 40px;
     }
     .energy {
-        width: 320px;
-        margin-right: auto;
-        margin-left: auto;
+        width: auto;
     }
     .energy > p{
         font-size: 18px;
         width: auto;
+        padding-left: 64px;
+        padding-right: 64px;
     }
     .formulas {
-        font-size: 30px;
-        width: 360px;
+        width: auto;
     }
     .formulas > p {
         font-size: 30px !important;
     }
+    .gradiant { 
+        padding-left: 54px;
+        padding-right: 54px;
+    }
     .learn {
-        width: 360px;
-        margin-right: auto;
-        margin-left: auto;
+        width: auto;
         text-transform: uppercase;
         font-size: 24px;
     }
@@ -689,5 +859,370 @@
         /* line-height: 140%; */
         letter-spacing: 0.05em;
         text-shadow: 1px 1px 0px #FFFFFF;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .main {
+        background-position: center;
+        max-width: auto;
+        height: auto;
+        margin: 0 !important;
+        padding: 0 !important;
+        padding: 50px 50px !important;
+    }
+    .main > h1 {
+        font-size: 60px;
+    }
+    .main > p {
+        font-size: 30px;
+    }
+    .main > .hello {
+        font-size: 140px;
+    }
+    .focus > .calm {
+        font-size: 40px;
+    }
+    .nutrient {
+        width: auto;
+    }
+    .introducing > h1{
+        margin-top: 20px;
+    }
+    .boosts-line > img {
+        position: absolute;
+        left: 35%;
+        top: 25%;
+        z-index: 1;
+        margin-top: 32px;
+    }
+    .presence-line {
+        position: absolute;
+        left: 48%;
+        top: 24%;
+        z-index: 1;
+        margin-top: 14px;
+    }
+    .gentle-line > img {
+        position: absolute;
+        left: 39%;
+        top: 37.4%;
+        z-index: 1;
+        margin-left: 13px;
+    }
+    .neuroprotective-line > img {
+        position: absolute;
+        left: 36%;
+        top: 41%;
+        z-index: 1;
+        margin-top: 13px;
+    }
+    .flow-line > img {
+        position: absolute;
+        left: 51%;
+        top: 43%;
+        z-index: 1;
+        margin-top: 23px;
+    }
+    .gradiant {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .learn {
+        width: auto;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main {
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        max-width: auto;
+        padding: 30px 30px 
+    }
+    .main > h1 {
+        font-size: 50px;
+    }
+    .main > p {
+        font-size: 25px;
+    }
+    .main > .hello {
+        font-size: 120px;
+    }
+    .focus > .calm {
+        font-size: 30px;
+    }
+    .question {
+        background: #000;
+        padding: 30px 100px;
+    }
+    .question > 
+    .question-1,
+    .question-2,
+    .question-3 {
+        width: auto;
+    }
+    .jitters-container {
+        width: auto;
+    }
+    .answer > p{
+        width: auto;
+    }
+    .nutrient {
+        width: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .introducing > h1 {
+        margin-top: 40px;
+    }
+    .introducing > .brain-flow > img {
+        max-width: auto;
+        height: 64px !important;
+    }
+    .introducing > .brain-flow > p {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .capsule > img{
+        display: none;
+    }
+    .resImage {
+        background-image: url("../images/resBrain.png");
+        max-width: 100%;
+        height: 146px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 30px;
+    }
+    .boosts-line,
+    .presence-line,
+    .gentle-line,
+    .captivating-line,
+    .flow-line,
+    .neuroprotective-line {
+        display: none;
+    }
+    .row-1,
+    .row-2,
+    .row-3
+    {
+        display: block;
+        padding: 0 100px;
+    }
+    .boosts,
+    .presence,
+    .gentle,
+    .captivating,
+    .neuroprotective,
+    .flow {
+        width: auto;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 40px;
+    }
+    .energy {
+        width: auto;
+    }
+    .energy > p{
+        font-size: 18px;
+        width: auto;
+        padding: 0 100px;
+    }
+    .card-1 > .card {
+        margin-left: 5px;
+    }
+    .formulas {
+        width: auto;
+    }
+    .gradiant { 
+        padding: 0 100px;
+    }
+    .learn {
+        width: auto;
+        text-transform: uppercase;
+        font-size: 24px;
+    }
+    .learn > h1 {
+        font-size: 20px;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+    
+}
+@media (min-width: 1537px) {
+   .main {
+        background-position: center;
+        width: auto;
+        height: auto;
+        padding: 70px 300px;
+        padding-left: auto;
+        position: relative;
+   }
+   .main > h1 { 
+       font-size: 160px;
+   }
+   .main > p {
+       font-size: 68px;
+       line-height: 80px;
+   }
+   .main > .hello {
+       font-size: 260px;
+       line-height: 400px;
+   }
+   .focus > .calm {
+        font-size: 88px;
+        width: auto;
+        line-height: 100px;
+   }
+   .question-1,
+   .question-2,
+   .question-3 {
+       width: 1200px;
+   }
+   .question p {
+       font-size: 40px;
+   }
+   .question-1 > img {
+       padding-bottom: 50px;
+   }
+   .question-2 > img { 
+       padding-bottom: 20px;
+   }
+   .question-3 > img {
+       padding-bottom: 20px;
+   }
+   .jitters-container {
+    width: 1200px;
+    }
+    .jitters > p {
+        font-size: 48px;
+        width: 400px;
+    }
+    .answer > p {
+        width: 1200px;
+    }
+    .solution > h1 {
+        font-size: 60px;
+    }
+    .card-1 {
+        width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .card-1 > .card {
+        width: 400px; 
+        height: 300px;  
+    }
+    .card > img {
+        max-width: 100%;
+        height: 100px;
+    }
+    .card-1 > .card > p {
+        font-size: 32px
+    }
+    .nutrient {
+        width: 1200px;
+    }
+    .nutrient > p {
+        font-size: 40px;
+    }
+    .introducing > h1 {
+        padding-top: 60px;
+        font-size: 60px;
+    }
+    .introducing > .brain-flow {
+        padding-top: 30px;
+    }
+    .introducing > .brain-flow > img {
+        max-width: 100%;
+        height: 200px;
+    }
+    .introducing > .brain-flow > p {
+        font-size: 60px;
+        line-height: 72px;
+        padding-bottom: 60px;
+    }
+    .row-1, .row-2, .row-3 {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .capsule > img {
+        margin-right: 70px;
+        margin-left: 70px;
+    }
+    .boosts,
+    .presence,
+    .neuroprotective,
+    .flow {
+        width: 600px;
+    }
+    .gentle {
+        width: 590px;
+    }
+    .captivating {
+        width: 580px;
+    }
+    .boosts-line > img{
+        left: 42%;
+        top: 26%;
+        margin-top: 52px;
+    }
+    .presence-line > img {
+        left: 48%;
+        top: 27%;
+        margin-top: 26px;
+    }
+    .neuroprotective-line {
+        position: absolute;
+        top: 37%;
+        left: 42%;
+        z-index: 1;
+        margin-top: 26px;
+    }
+    .flow-line {
+        position: absolute;
+        left: 51%;
+        top: 40%;
+        z-index: 1;
+        margin-top: 5px;
+    }
+    .gentle-line > img {
+        position: absolute;
+        left: 43%;
+        top: 36.4%;
+        z-index: 1;
+        margin-left: 11px;
+    }
+    .captivating-line {
+        position: absolute;
+        left: 51%;
+        top: 39%;
+        z-index: 1;
+        margin-left: 2px;
+    }
+    /* .row-1 {
+        width: 1200px;
+        border: 1px solid red;
+        margin-right: auto;
+        margin-left: auto;
+        
+    } */
+    .energy,
+    .formulas {
+        width: 1200px;
+    }
+    .energy > p {
+        margin-top: 60px;
+        font-size: 30px;
+    }
+    .formulas > p {
+        font-size: 80px;
+    }
+    .learn {
+        width: 1200px;
+    }
+    .learn > h1 {
+        font-size: 60px;
     }
 }
