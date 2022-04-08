@@ -333,10 +333,10 @@
 }
 .gentle-line > img {
     position: absolute;
-    left: 43%;
+    right: 49.5%;
     top: 37.4%;
     z-index: 1;
-    margin-left: 8px;
+    /* margin-left: 8px; */
 }
 .captivating-line > img {
     position: absolute;
@@ -1046,9 +1046,6 @@
         font-size: 20px;
     }
 }
-@media (min-width: 1025px) and (max-width: 1280px) {
-    
-}
 @media (min-width: 1537px) {
    .main {
         background-position: center;
@@ -1189,15 +1186,14 @@
     }
     .gentle-line > img {
         position: absolute;
-        left: 43%;
+        right: 51%;
         top: 36.4%;
         z-index: 1;
-        margin-left: 11px;
     }
     .captivating-line {
         position: absolute;
         left: 51%;
-        top: 39%;
+        top: 38%;
         z-index: 1;
         margin-left: 2px;
     }
@@ -1226,3 +1222,4 @@
         font-size: 60px;
     }
 }
+@media only
